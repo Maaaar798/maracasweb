@@ -1,3 +1,61 @@
+.menuSticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;           
+    padding: 0;         
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+.opcion, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.opcion:hover, .dropbtn:hover {
+    background-color: red;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    width: 160px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.slide-wrapper {
+    width: 3640px; 
+    animation: slide 25s infinite ease-in-out;
+}
+
 body {
     background: linear-gradient(red, blue);
     font-family: Arial, sans-serif;
@@ -22,7 +80,7 @@ h1 span {
 
 .inline {
     display: inline;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0);
 }
 
 .inline-block {
@@ -61,4 +119,69 @@ th, td {
     top: 150px;
     left: 70px;
     z-index: 2;
+}
+
+
+
+
+
+.imgUno {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphIYcDQErs-UUFV1Do91x_Y25xhpQ3cnvcA&s");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    height: 400px;
+    width: 728px;
+}
+
+.imgDos {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn6fqiyWRtFkvTw2e-Ob-X2UzGKrrBELAKxg&s");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    height: 400px;
+    width: 728px;
+}
+
+.imgTres {
+    background-image: url("https://i.pinimg.com/564x/d7/3c/ae/d73cae4d0d9a2d6cf2c1b1c893c98349.jpg");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    height: 400px;
+    width: 728px;
+}
+
+.imgCuatro {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4F5VIXgzdsVKTq0N7LZGGkQlwbtfFbEgT4Q&s");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    height: 400px;
+    width: 728px;
+}
+
+.imgCinco {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLeyFtmvw-O_vOhZA0LoS2Hy3lyG1VjllWmg&s");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    height: 400px;
+    width: 728px;
+}
+@keyframes slide {
+    0% {margin-left: 0px;}
+    20% {margin-left: 0px;}
+
+    25% {margin-left: -728px;}
+    40% {margin-left: -728px;}
+
+    45% {margin-left: -1456px;}
+    60% {margin-left: -1456px;}
+
+    65% {margin-left: -2184px;}
+    80% {margin-left: -2184px;}
+
+    85% {margin-left: -2912px;}
+    100% {margin-left: -2912px;}
 }
